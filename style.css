@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('images/fc24.jpg') no-repeat center center/cover;
+}
+.login-container {
+    background: rgba(211, 230, 232, 0.6);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+.login-container h2 {
+    margin-bottom: 10px;
+}
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.checkbox-group input {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.login-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Yazı ile top arasındaki mesafe */
+}
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.login-btn:hover {
+    background: #0056b3;
+}
+.ball {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: inset 0 0 0 2px black;
+    display: inline-block;
+}
+.ball::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgb(4, 15, 235);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    top: 5px;
+    left: 5px;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.link {
+	padding: 0 10px;
+}
+
+.container {
+	margin: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.soccer-ball {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	position: relative;
+	background: url('https://raw.githubusercontent.com/Yousuke777/texture/main/soccer-ball-02.png') repeat;
+	background-size: 200%;
+	box-shadow: -20px -10px 30px rgba(0, 0, 0, 0.75) inset;
+	animation: rotate-anim 2s linear infinite;
+}
+
+.soccer-ball:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -5px;
+	margin: auto;
+	width: 80px;
+	height: 5px;
+	border-radius: 50%;
+	background: #000;
+	filter: blur(5px);
+	z-index: -1;
+}
+
+@keyframes rotate-anim {
+	100% {
+		background-position: -100% 0;
+	}
+}
+#clock {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, sans-serif;
+}
+
