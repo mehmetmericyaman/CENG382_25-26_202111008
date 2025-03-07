@@ -160,7 +160,7 @@ body {
 .corner-flag-reverse {
     width: 5px;
     height: 50px;
-    background: red; /* Renk farklı olsun */
+    background: red;
     position: absolute;
     top: -30px;
     left: 50%;
@@ -168,8 +168,6 @@ body {
     border-radius: 5px;
     animation: moveAroundReverse 6s linear infinite;
 }
-
-/* İkinci Bayrağın Üçgen Kısmı (Ters Üçgen) */
 .corner-flag-reverse::before {
     content: "";
     position: absolute;
