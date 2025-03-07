@@ -26,4 +26,26 @@ document.addEventListener("keydown", function (event) {
         });
     }
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const loginButton = document.querySelector('.login-btn'); // Login butonunu seç
+    const usernameInput = document.getElementById('username'); // Kullanıcı adı input
+    const passwordInput = document.getElementById('password'); // Şifre input
 
+    // Kullanıcı bilgilerini saklamak için bir dizi
+    let users = [];
+
+    // Login butonuna tıklama olayını ekle
+    loginButton.addEventListener('click', function (event) {
+        event.preventDefault(); // Formun sayfayı yenilemesini engelle
+
+        // Kullanıcı adı ve şifreyi al
+        const username = usernameInput.value;
+        const password = passwordInput.value;
+
+        // Dizinin içine kullanıcı adı ve şifreyi ekle
+        users.push({ username, password });
+
+        // Konsola diziyi yazdır
+        console.log(users);
+    });
+});

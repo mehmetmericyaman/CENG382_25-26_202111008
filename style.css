@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('images/fc24.jpg') no-repeat center center/cover;
+    background: url('images/Dance\ Dancing\ GIF\ by\ EA\ SPORTS\ FC.gif') no-repeat center center/cover;
 }
 .login-container {
     background: rgba(211, 230, 232, 0.6);
@@ -18,6 +18,7 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 300px;
+    position: relative;
 }
 .login-container h2 {
     margin-bottom: 10px;
@@ -130,19 +131,89 @@ body {
 		background-position: -100% 0;
 	}
 }
+/* Korner Bayrağı (1. Bayrak - Saat Yönünde) */
+.corner-flag {
+    width: 5px;
+    height: 50px;
+    background: red;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    animation: moveAround 6s linear infinite;
+}
+
+/* Bayrağın Üçgen Kısmı */
+.corner-flag::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    background: yellow;
+    top: 0;
+    left: 5px;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+/* İkinci Korner Bayrağı (Saat Yönünün Tersine) */
+.corner-flag-reverse {
+    width: 5px;
+    height: 50px;
+    background: red;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    animation: moveAroundReverse 6s linear infinite;
+}
+.corner-flag-reverse::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    background: yellow;
+    top: 0;
+    left: -25px;
+    clip-path: polygon(100% 0%, 0% 50%, 100% 100%); 
+}
+
+/* İlk bayrak hareketi (Saat yönü) */
+@keyframes moveAround {
+    0% { top: -30px; left: 50%; transform: translateX(-50%); }
+    25% { top: 50%; left: 100%; transform: translateY(-50%); }
+    50% { top: 100%; left: 50%; transform: translateX(-50%); }
+    75% { top: 50%; left: -10px; transform: translateY(-50%); }
+    100% { top: -30px; left: 50%; transform: translateX(-50%); }
+}
+
+/* İkinci bayrak hareketi (Saat yönünün tersi) */
+@keyframes moveAroundReverse {
+    0% { top: -30px; left: 50%; transform: translateX(-50%); }
+    25% { top: 50%; left: -10px; transform: translateY(-50%); }
+    50% { top: 100%; left: 50%; transform: translateX(-50%); }
+    75% { top: 50%; left: 100%; transform: translateY(-50%); }
+    100% { top: -30px; left: 50%; transform: translateX(-50%); }
+}
+
+/* Sayfanın dışına taşan içerikleri gizlemek için */
+html, body {
+    overflow: hidden; /* Sayfanın taşan kısmını gizler */
+    height: 100%; /* Yükseklik %100, taşmayı engellemek için */
+    margin: 0; /* Sayfanın kenar boşluklarını sıfırlar */
+    padding: 0; /* Sayfanın kenar boşluklarını sıfırlar */
+}
+
 #clock {
-    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
     font-weight: bold;
-    margin-top: 10px;
-    text-align: center;
-    color: #333;
-    background: rgba(255, 255, 255, 0.6);
-    padding: 10px;
+    color: rgb(8, 85, 173);
+    background: rgba(0, 0, 0, 0.1);
+    padding: 5px;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: Arial, sans-serif;
+    text-align: center;
+    letter-spacing: 1px; /* Harfler arası boşluk */
 }
 
