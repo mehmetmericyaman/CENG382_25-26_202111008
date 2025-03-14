@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="login-container">
-        <h2 class="login-title">Login <span class="soccer-ball"></span></h2>
-        <div id="clock"></div> <!-- Canlı saat -->
+        <h2 class="login-title">Fifa Fan's Login Page <span class="soccer-ball"></span></h2>
+        <div id="clock"></div> <!-- Canlısaat -->  
         <form>
             <div class="input-group">
                 <label for="username">Username</label>
@@ -22,11 +24,18 @@
             </div>
             <div class="input-group checkbox-group">
                 <input type="checkbox" id="remember-me">
-                <label for="remember-me">Remember Me</label>
+                <label for="remember-me">Remember  Me</label>
             </div>
             <button type="submit" class="login-btn">Login</button>
         </form>
     </div>
+     
+   <!-- İlk Korner Bayrağı (Saat Yönünde) -->
+    <div class="corner-flag"></div>
+
+    <!-- İkinci Korner Bayrağı (Saat Yönünün Tersine) -->
+    <div class="corner-flag-reverse"></div>
+
     <script src="main.js"></script>
     
 </body>
