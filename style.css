@@ -21,39 +21,56 @@ body {
     position: relative;
 }
 .login-container h2 {
+    font-family: 'Text Me One', cursive;
     margin-bottom: 10px;
 }
-.input-group {
+.index-input-group {
     margin-bottom: 15px;
     text-align: left;
 }
-.input-group label {
+
+.index-input-group label {
+    font-family: 'Text Me One', cursive;
     display: block;
+    font-weight: 700;
     margin-bottom: 5px;
+    color: #000;
 }
-.input-group input {
+
+.index-input-group input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 50px;
+    border-radius: 5px;
+    font-size: 16px;
 }
+
 .checkbox-group {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: flex-start; /* Ensures alignment to the left */
+    gap: 0px
 }
 .checkbox-group input {
-    width: 16px;
-    height: 16px;
+    margin: 0; /* Resets any default margin/padding */
+    width: 15px;
+    height: 50px;
     cursor: pointer;
+}
+.checkbox-group label {
+    font-family: 'Text Me One', cursive;
+    font-weight: 700;
+    margin-left: 8px; 
+    font-size: 14px; 
 }
 .login-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Yazı ile top arasındaki mesafe */
+    gap: 10x; /* Yazı ile top arasındaki mesafe */
 }
 .login-btn {
+    font-family: 'Text Me One', cursive;
     width: 100%;
     padding: 10px;
     background: #007BFF;
@@ -216,4 +233,127 @@ html, body {
     text-align: center;
     letter-spacing: 1px; /* Harfler arası boşluk */
 }
+/* Tablo Konteyneri */
+.table-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Başlık */
+.table-title {
+    font-family: fantasy;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: black;
+}
+
+/* Form Stilleri */
+.table-input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.table-input-group label {
+    font-family: fantasy;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.table-input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Buton Stilleri */
+.add-btn {
+    font-family: 'Text Me One', cursive;
+    width: 100%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 80px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: green;
+}
+
+/* Tablo Stili */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table th, .styled-table td {
+    font-family: 'Text Me One', cursive;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.styled-table thead {
+    background: #007BFF;
+    color: white;
+    font-weight: bold;
+}
+
+.styled-table tbody tr:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.styled-table tbody tr:hover {
+    background: rgba(0, 123, 255, 0.1);
+}
+
+/* Silme Butonu */
+.delete-btn {
+    background: white;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+/* Çıkış Butonu */
+.logout-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background: re;
+}
+
 
