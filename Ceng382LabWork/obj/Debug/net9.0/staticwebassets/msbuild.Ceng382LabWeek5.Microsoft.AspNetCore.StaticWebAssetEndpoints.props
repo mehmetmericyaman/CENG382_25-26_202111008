@@ -4,13 +4,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Ceng382LabWeek5.rvoq8ur8g6.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-d/Av/8kw6Qs3zxBjQwgeiDh9FuNrhDrUbBGImuAY67Y="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1133"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022d/Av/8kw6Qs3zxBjQwgeiDh9FuNrhDrUbBGImuAY67Y=\u0022"},{"Name":"Last-Modified","Value":"Wed, 26 Mar 2025 11:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1133"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022d/Av/8kw6Qs3zxBjQwgeiDh9FuNrhDrUbBGImuAY67Y=\u0022"},{"Name":"Last-Modified","Value":"Tue, 08 Apr 2025 18:40:21 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Ceng382LabWeek5/Ceng382LabWeek5.rvoq8ur8g6.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Ceng382LabWeek5.rvoq8ur8g6.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rvoq8ur8g6"},{"Name":"integrity","Value":"sha256-d/Av/8kw6Qs3zxBjQwgeiDh9FuNrhDrUbBGImuAY67Y="},{"Name":"label","Value":"_content/Ceng382LabWeek5/Ceng382LabWeek5.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1133"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022d/Av/8kw6Qs3zxBjQwgeiDh9FuNrhDrUbBGImuAY67Y=\u0022"},{"Name":"Last-Modified","Value":"Wed, 26 Mar 2025 11:49:39 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1133"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022d/Av/8kw6Qs3zxBjQwgeiDh9FuNrhDrUbBGImuAY67Y=\u0022"},{"Name":"Last-Modified","Value":"Tue, 08 Apr 2025 18:40:21 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Ceng382LabWeek5/css/site.b9sayid5wm.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>

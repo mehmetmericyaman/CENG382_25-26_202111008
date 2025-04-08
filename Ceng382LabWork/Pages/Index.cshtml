@@ -32,13 +32,22 @@
             </form>
         </div>
 
-        <!-- Tablo Alanı (Sağ Taraf) -->
+        <!-- Tablo ve Filtreleme (Sağ Taraf) -->
         <div class="col-md-8">
             <h3>Class List</h3>
+
+            <!-- Filtre Formu -->
+            <form method="get" class="mb-3">
+                <div class="input-group">
+                    <input type="text" name="SearchName" class="form-control" placeholder="Search by Class Name..." value="@Model.SearchName" />
+                    <button type="submit" class="btn btn-outline-primary">Filter</button>
+                </div>
+            </form>
+
+            <!-- Tablo -->
             <table class="table table-bordered">
                 <thead>
                     <tr>
-                        <th>Id</th>
                         <th>Class Name</th>
                         <th>Student Count</th>
                         <th>Description</th>
@@ -46,10 +55,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var item in Model.Classes)
+                    @foreach (var item in Model.FilteredClasses)
                     {
                         <tr>
-                            <td>@item.Id</td>
                             <td>@item.ClassName</td>
                             <td>@item.StudentCount</td>
                             <td>@item.Description</td>
@@ -63,6 +71,26 @@
                     }
                 </tbody>
             </table>
+
+            <!-- Sayfalama -->
+            <nav>
+                <ul class="pagination">
+                    <li class="page-item @(Model.PageNumber == 1 ? "disabled" : "")">
+                        <a class="page-link" href="?SearchName=@Model.SearchName&PageNumber=@(Model.PageNumber - 1)">Previous</a>
+                    </li>
+
+                    @for (int i = 1; i <= Model.TotalPages; i++)
+                    {
+                        <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                            <a class="page-link" href="?SearchName=@Model.SearchName&PageNumber=@i">@i</a>
+                        </li>
+                    }
+
+                    <li class="page-item @(Model.PageNumber == Model.TotalPages ? "disabled" : "")">
+                        <a class="page-link" href="?SearchName=@Model.SearchName&PageNumber=@(Model.PageNumber + 1)">Next</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 </div>
