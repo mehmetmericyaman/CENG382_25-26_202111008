@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+k3sHkGZcRPL6FSu7q75agPXZ/0/KtQ89kjMiYYUTSE=",
+  "Hash": "e6WEdWgBtwWap/zEAAlhDRj49g/pJq0SC3BWb7gaPTc=",
   "Source": "Ceng382LabWeek5",
   "BasePath": "_content/Ceng382LabWeek5",
   "Mode": "Default",
@@ -36,6 +36,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\mehme\\OneDrive\\Masaüstü\\Meriç Yaman\\Ceng382LabWeek5\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Identity": "C:\\Users\\mehme\\OneDrive\\Masaüstü\\Meriç Yaman\\Ceng382LabWeek5\\obj\\Debug\\net9.0\\compressed\\1yto1twz36-wj5qj71hwe.gz",
+      "SourceId": "Ceng382LabWeek5",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mehme\\OneDrive\\Masaüstü\\Meriç Yaman\\Ceng382LabWeek5\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Ceng382LabWeek5",
+      "RelativePath": "data/users#[.{fingerprint=wj5qj71hwe}]?.json.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\mehme\\OneDrive\\Masaüstü\\Meriç Yaman\\Ceng382LabWeek5\\wwwroot\\data\\users.json",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "i04364tsnw",
+      "Integrity": "7qJOOPgpY1uhxmqwbjvxkE3tP5LCLMLag6cI18o14bI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\mehme\\OneDrive\\Masaüstü\\Meriç Yaman\\Ceng382LabWeek5\\wwwroot\\data\\users.json"
     },
     {
       "Identity": "C:\\Users\\mehme\\OneDrive\\Masaüstü\\Meriç Yaman\\Ceng382LabWeek5\\obj\\Debug\\net9.0\\compressed\\216cgzadvu-vr1egmr9el.gz",
@@ -1424,6 +1445,27 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "C:\\Users\\mehme\\OneDrive\\Masaüstü\\Meriç Yaman\\Ceng382LabWeek5\\wwwroot\\data\\users.json",
+      "SourceId": "Ceng382LabWeek5",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mehme\\OneDrive\\Masaüstü\\Meriç Yaman\\Ceng382LabWeek5\\wwwroot\\",
+      "BasePath": "_content/Ceng382LabWeek5",
+      "RelativePath": "data/users#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wj5qj71hwe",
+      "Integrity": "ZKLi5lGcgnHTKh7Nxt80UVCpn1qbZTEbNzDyVf/vgsw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\data\\users.json"
+    },
+    {
       "Identity": "C:\\Users\\mehme\\OneDrive\\Masaüstü\\Meriç Yaman\\Ceng382LabWeek5\\wwwroot\\favicon.ico",
       "SourceId": "Ceng382LabWeek5",
       "SourceType": "Discovered",
@@ -2752,7 +2794,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 18:40:21 GMT"
+          "Value": "Fri, 18 Apr 2025 13:48:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2805,7 +2847,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 18:40:21 GMT"
+          "Value": "Fri, 18 Apr 2025 13:48:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2842,7 +2884,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 18:40:21 GMT"
+          "Value": "Fri, 18 Apr 2025 13:48:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2889,7 +2931,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 18:40:21 GMT"
+          "Value": "Fri, 18 Apr 2025 13:48:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2950,7 +2992,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 18:40:21 GMT"
+          "Value": "Fri, 18 Apr 2025 13:48:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2995,7 +3037,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 18:40:21 GMT"
+          "Value": "Fri, 18 Apr 2025 13:48:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3050,7 +3092,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 18:40:21 GMT"
+          "Value": "Fri, 18 Apr 2025 13:48:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3111,7 +3153,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 18:40:21 GMT"
+          "Value": "Fri, 18 Apr 2025 13:48:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3156,7 +3198,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 18:40:21 GMT"
+          "Value": "Fri, 18 Apr 2025 13:48:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3211,7 +3253,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 18:40:21 GMT"
+          "Value": "Fri, 18 Apr 2025 13:48:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3264,7 +3306,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 18:40:21 GMT"
+          "Value": "Fri, 18 Apr 2025 13:48:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3301,7 +3343,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 18:40:21 GMT"
+          "Value": "Fri, 18 Apr 2025 13:48:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3618,6 +3660,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
+        }
+      ]
+    },
+    {
+      "Route": "data/users.json",
+      "AssetFile": "C:\\Users\\mehme\\OneDrive\\Masaüstü\\Meriç Yaman\\Ceng382LabWeek5\\obj\\Debug\\net9.0\\compressed\\1yto1twz36-wj5qj71hwe.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.006289308176"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "158"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7qJOOPgpY1uhxmqwbjvxkE3tP5LCLMLag6cI18o14bI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 13:01:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ZKLi5lGcgnHTKh7Nxt80UVCpn1qbZTEbNzDyVf/vgsw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZKLi5lGcgnHTKh7Nxt80UVCpn1qbZTEbNzDyVf/vgsw="
+        }
+      ]
+    },
+    {
+      "Route": "data/users.json",
+      "AssetFile": "C:\\Users\\mehme\\OneDrive\\Masaüstü\\Meriç Yaman\\Ceng382LabWeek5\\wwwroot\\data\\users.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZKLi5lGcgnHTKh7Nxt80UVCpn1qbZTEbNzDyVf/vgsw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 13:01:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZKLi5lGcgnHTKh7Nxt80UVCpn1qbZTEbNzDyVf/vgsw="
+        }
+      ]
+    },
+    {
+      "Route": "data/users.json.gz",
+      "AssetFile": "C:\\Users\\mehme\\OneDrive\\Masaüstü\\Meriç Yaman\\Ceng382LabWeek5\\obj\\Debug\\net9.0\\compressed\\1yto1twz36-wj5qj71hwe.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "158"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7qJOOPgpY1uhxmqwbjvxkE3tP5LCLMLag6cI18o14bI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 13:01:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7qJOOPgpY1uhxmqwbjvxkE3tP5LCLMLag6cI18o14bI="
+        }
+      ]
+    },
+    {
+      "Route": "data/users.wj5qj71hwe.json",
+      "AssetFile": "C:\\Users\\mehme\\OneDrive\\Masaüstü\\Meriç Yaman\\Ceng382LabWeek5\\obj\\Debug\\net9.0\\compressed\\1yto1twz36-wj5qj71hwe.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.006289308176"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "158"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7qJOOPgpY1uhxmqwbjvxkE3tP5LCLMLag6cI18o14bI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 13:01:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ZKLi5lGcgnHTKh7Nxt80UVCpn1qbZTEbNzDyVf/vgsw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wj5qj71hwe"
+        },
+        {
+          "Name": "label",
+          "Value": "data/users.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZKLi5lGcgnHTKh7Nxt80UVCpn1qbZTEbNzDyVf/vgsw="
+        }
+      ]
+    },
+    {
+      "Route": "data/users.wj5qj71hwe.json",
+      "AssetFile": "C:\\Users\\mehme\\OneDrive\\Masaüstü\\Meriç Yaman\\Ceng382LabWeek5\\wwwroot\\data\\users.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZKLi5lGcgnHTKh7Nxt80UVCpn1qbZTEbNzDyVf/vgsw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 13:01:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wj5qj71hwe"
+        },
+        {
+          "Name": "label",
+          "Value": "data/users.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZKLi5lGcgnHTKh7Nxt80UVCpn1qbZTEbNzDyVf/vgsw="
+        }
+      ]
+    },
+    {
+      "Route": "data/users.wj5qj71hwe.json.gz",
+      "AssetFile": "C:\\Users\\mehme\\OneDrive\\Masaüstü\\Meriç Yaman\\Ceng382LabWeek5\\obj\\Debug\\net9.0\\compressed\\1yto1twz36-wj5qj71hwe.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "158"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7qJOOPgpY1uhxmqwbjvxkE3tP5LCLMLag6cI18o14bI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 13:01:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wj5qj71hwe"
+        },
+        {
+          "Name": "label",
+          "Value": "data/users.json.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7qJOOPgpY1uhxmqwbjvxkE3tP5LCLMLag6cI18o14bI="
         }
       ]
     },

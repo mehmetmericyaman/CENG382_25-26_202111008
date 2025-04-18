@@ -18,6 +18,7 @@ C:\Users\mehme\OneDrive\Masaüstü\Meriç Yaman\Ceng382LabWeek5\obj\Debug\net9.0
 C:\Users\mehme\OneDrive\Masaüstü\Meriç Yaman\Ceng382LabWeek5\obj\Debug\net9.0\scopedcss\bundle\Ceng382LabWeek5.styles.css
 C:\Users\mehme\OneDrive\Masaüstü\Meriç Yaman\Ceng382LabWeek5\obj\Debug\net9.0\scopedcss\projectbundle\Ceng382LabWeek5.bundle.scp.css
 C:\Users\mehme\OneDrive\Masaüstü\Meriç Yaman\Ceng382LabWeek5\obj\Debug\net9.0\compressed\o1jecb04s6-b9sayid5wm.gz
+C:\Users\mehme\OneDrive\Masaüstü\Meriç Yaman\Ceng382LabWeek5\obj\Debug\net9.0\compressed\1yto1twz36-wj5qj71hwe.gz
 C:\Users\mehme\OneDrive\Masaüstü\Meriç Yaman\Ceng382LabWeek5\obj\Debug\net9.0\compressed\75181irs1j-61n19gt1b8.gz
 C:\Users\mehme\OneDrive\Masaüstü\Meriç Yaman\Ceng382LabWeek5\obj\Debug\net9.0\compressed\s2t9qht783-xtxxf3hu2r.gz
 C:\Users\mehme\OneDrive\Masaüstü\Meriç Yaman\Ceng382LabWeek5\obj\Debug\net9.0\compressed\8m6uivzljp-bqjiyaj88i.gz

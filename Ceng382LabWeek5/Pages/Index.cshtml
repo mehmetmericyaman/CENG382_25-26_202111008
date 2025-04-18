@@ -4,6 +4,13 @@
     ViewData["Title"] = "Class Management";
 }
 
+<!-- Logout Butonu -->
+<div class="d-flex justify-content-end p-2">
+    <form method="post" asp-page-handler="Logout">
+        <button type="submit" class="btn btn-outline-danger">Logout</button>
+    </form>
+</div>
+
 <div class="container mt-4">
     <div class="row">
         <!-- Form Alanı (Sol Taraf) -->
@@ -32,70 +39,79 @@
             </form>
         </div>
 
-            <!-- Tablo ve Filtreleme (Sağ Taraf) -->
-    <div class="col-md-8">
-        <h3>Class List</h3>
+        <!-- Tablo ve Filtreleme (Sağ Taraf) -->
+        <div class="col-md-8">
+            <h3>Class List</h3>
 
-        <!-- Filtre Formu -->
-        <form method="get" class="mb-3">
-            <div class="input-group">
-                <input type="text" name="SearchName" class="form-control" placeholder="Search by Class Name..." value="@Model.SearchName" />
-                <button type="submit" class="btn btn-outline-primary">Filter</button>
-            </div>
-        </form>
-
-        <!-- Export Formu -->
-        <form method="post" asp-page-handler="ExportJson">
-            <div class="mb-3">
-                <label class="form-label">Select Columns to Export:</label><br />
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="SelectedColumns" value="ClassName" checked />
-                    <label class="form-check-label">Class Name</label>
+            <!-- Filtre Formu -->
+            <form method="get" class="mb-3">
+                <div class="input-group">
+                    <input type="text" name="SearchName" class="form-control" placeholder="Search by Class Name..." value="@Model.SearchName" />
+                    <button type="submit" class="btn btn-outline-primary">Filter</button>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="SelectedColumns" value="StudentCount" checked />
-                    <label class="form-check-label">Student Count</label>
+            </form>
+
+            <!-- Export Formu -->
+            <form method="post" asp-page-handler="ExportJson">
+                <div class="mb-3">
+                    <label class="form-label">Select Columns to Export:</label><br />
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="SelectedColumns" value="ClassName" checked />
+                        <label class="form-check-label">Class Name</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="SelectedColumns" value="StudentCount" checked />
+                        <label class="form-check-label">Student Count</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="SelectedColumns" value="Description" checked />
+                        <label class="form-check-label">Description</label>
+                    </div>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="SelectedColumns" value="Description" checked />
-                    <label class="form-check-label">Description</label>
-                </div>
-            </div>
 
-            <button type="submit" class="btn btn-success">Export Filtered JSON</button>
-            <button type="submit" class="btn btn-secondary" name="exportAll" value="true">Export All JSON</button>
-        </form>
+                <button type="submit" class="btn btn-success">Export Filtered JSON</button>
+                <button type="submit" class="btn btn-secondary" name="exportAll" value="true">Export All JSON</button>
+            </form>
 
-        <br />
+            <br />
 
-        <!-- Tablo -->
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Class Name</th>
-                    <th>Student Count</th>
-                    <th>Description</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model.FilteredClasses)
-                {
+            <!-- Tablo -->
+            <table class="table table-bordered">
+                <thead>
                     <tr>
-                        <td>@item.ClassName</td>
-                        <td>@item.StudentCount</td>
-                        <td>@item.Description</td>
-                        <td>
-                            <form method="post">
-                                <input type="hidden" name="id" value="@item.Id" />
-                                <button type="submit" class="btn btn-danger btn-sm" asp-page-handler="Delete">Delete</button>
-                            </form>
+                        <th>Class Name</th>
+                        <th>Student Count</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+    @if (Model.FilteredClasses != null && Model.FilteredClasses.Any())
+    {
+        @foreach (var item in Model.FilteredClasses)
+        {
+            <tr>
+                <td>@item.ClassName</td>
+                <td>@item.StudentCount</td>
+                <td>@item.Description</td>
+                <td>
+                    <form method="post">
+                        <input type="hidden" name="id" value="@item.Id" />
+                        <button type="submit" class="btn btn-danger btn-sm" asp-page-handler="Delete">Delete</button>
+                    </form>
                         </td>
                     </tr>
                 }
-            </tbody>
-        </table>
+            }
+            else
+            {
+                <tr>
+                    <td colspan="4">No classes available.</td>
+                </tr>
+            }
+        </tbody>
 
+            </table>
 
             <!-- Sayfalama -->
             <nav>
