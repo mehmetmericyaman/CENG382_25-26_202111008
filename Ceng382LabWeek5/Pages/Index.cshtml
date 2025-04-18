@@ -1,0 +1,121 @@
+﻿@page
+@model Ceng382LabWeek5.Pages.IndexModel
+@{
+    ViewData["Title"] = "Class Management";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Form Alanı (Sol Taraf) -->
+        <div class="col-md-4">
+            <h3>Add Class</h3>
+            <form method="post">
+                <div class="mb-3">
+                    <label class="form-label">Class Name</label>
+                    <input type="text" class="form-control" asp-for="NewClass.ClassName">
+                    <span class="text-danger" asp-validation-for="NewClass.ClassName"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Student Count</label>
+                    <input type="number" class="form-control" asp-for="NewClass.StudentCount">
+                    <span class="text-danger" asp-validation-for="NewClass.StudentCount"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Description</label>
+                    <textarea class="form-control" asp-for="NewClass.Description"></textarea>
+                    <span class="text-danger" asp-validation-for="NewClass.Description"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary" asp-page-handler="Add">Add Class</button>
+            </form>
+        </div>
+
+            <!-- Tablo ve Filtreleme (Sağ Taraf) -->
+    <div class="col-md-8">
+        <h3>Class List</h3>
+
+        <!-- Filtre Formu -->
+        <form method="get" class="mb-3">
+            <div class="input-group">
+                <input type="text" name="SearchName" class="form-control" placeholder="Search by Class Name..." value="@Model.SearchName" />
+                <button type="submit" class="btn btn-outline-primary">Filter</button>
+            </div>
+        </form>
+
+        <!-- Export Formu -->
+        <form method="post" asp-page-handler="ExportJson">
+            <div class="mb-3">
+                <label class="form-label">Select Columns to Export:</label><br />
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="SelectedColumns" value="ClassName" checked />
+                    <label class="form-check-label">Class Name</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="SelectedColumns" value="StudentCount" checked />
+                    <label class="form-check-label">Student Count</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="SelectedColumns" value="Description" checked />
+                    <label class="form-check-label">Description</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-success">Export Filtered JSON</button>
+            <button type="submit" class="btn btn-secondary" name="exportAll" value="true">Export All JSON</button>
+        </form>
+
+        <br />
+
+        <!-- Tablo -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Class Name</th>
+                    <th>Student Count</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.FilteredClasses)
+                {
+                    <tr>
+                        <td>@item.ClassName</td>
+                        <td>@item.StudentCount</td>
+                        <td>@item.Description</td>
+                        <td>
+                            <form method="post">
+                                <input type="hidden" name="id" value="@item.Id" />
+                                <button type="submit" class="btn btn-danger btn-sm" asp-page-handler="Delete">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+            <!-- Sayfalama -->
+            <nav>
+                <ul class="pagination">
+                    <li class="page-item @(Model.PageNumber == 1 ? "disabled" : "")">
+                        <a class="page-link" href="?SearchName=@Model.SearchName&PageNumber=@(Model.PageNumber - 1)">Previous</a>
+                    </li>
+
+                    @for (int i = 1; i <= Model.TotalPages; i++)
+                    {
+                        <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                            <a class="page-link" href="?SearchName=@Model.SearchName&PageNumber=@i">@i</a>
+                        </li>
+                    }
+
+                    <li class="page-item @(Model.PageNumber == Model.TotalPages ? "disabled" : "")">
+                        <a class="page-link" href="?SearchName=@Model.SearchName&PageNumber=@(Model.PageNumber + 1)">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>

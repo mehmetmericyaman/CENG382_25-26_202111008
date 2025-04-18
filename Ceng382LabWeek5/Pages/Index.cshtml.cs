@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Ceng382LabWeek5.Models;
 using System.Collections.Generic;
 using System.Linq;
+using Ceng382LabWeek5.Helpers; // Utils sınıfı için gerekli
+using System.Text;             // FileContentResult için gerekli
 
 namespace Ceng382LabWeek5.Pages
 {
@@ -91,6 +93,34 @@ namespace Ceng382LabWeek5.Pages
                 ClassList.Remove(classToRemove);
             }
             return RedirectToPage();
+        }
+
+        public IActionResult OnPostExportJson(List<string> SelectedColumns, bool exportAll = false)
+        {
+            List<ClassInformationModel> exportData;
+
+            if (exportAll)
+            {
+                exportData = ClassList;
+            }
+            else
+            {
+                var query = ClassList.AsQueryable();
+
+                if (!string.IsNullOrEmpty(SearchName))
+                {
+                    query = query.Where(c => c.ClassName.ToLower().Contains(SearchName.ToLower()));
+                }
+
+                exportData = query.ToList();
+            }
+
+            // JSON oluştur
+            var json = Utils.Instance.ExportToJson(exportData, SelectedColumns);
+
+            // Tarayıcıya indirme başlat (application/json)
+            var fileBytes = Encoding.UTF8.GetBytes(json);
+            return File(fileBytes, "application/json", "export.json");
         }
     }
 }
