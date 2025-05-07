@@ -1,19 +1,26 @@
+using Microsoft.EntityFrameworkCore;
+using Ceng382LabWeek5.Data; // DbContext için gerekli
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Bağlantı cümlesi üzerinden DbContext'i ekliyoruz
+builder.Services.AddDbContext<SchoolDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SchoolDbConnection")));
+
+// Razor Pages servisi
 builder.Services.AddRazorPages();
 
-// **Session hizmetini ekleyelim**
+// Session hizmetini ekliyoruz
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromMinutes(20); // Oturum süresi
-    options.Cookie.HttpOnly = true;  // Çerez sadece HTTP üzerinden erişilebilir olacak
-    options.Cookie.IsEssential = true;  // Çerezin zorunlu olduğunu belirtiriz
+    options.IdleTimeout = TimeSpan.FromMinutes(20);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
 });
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Hata ayıklama ve HSTS yapılandırması
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
@@ -22,15 +29,15 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// Static dosyalar (wwwroot) için
+app.UseStaticFiles();
+
+// Routing ve session middleware
 app.UseRouting();
-
-// **Session kullanımı için middleware ekleyelim**
-app.UseSession(); // Bu satır önemli, session middleware'ini burada ekliyoruz
-
+app.UseSession();
 app.UseAuthorization();
 
-app.MapStaticAssets();
-app.MapRazorPages()
-   .WithStaticAssets();
+// Razor Pages route tanımı
+app.MapRazorPages();
 
 app.Run();

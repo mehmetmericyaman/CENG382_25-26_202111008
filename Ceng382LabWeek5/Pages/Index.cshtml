@@ -14,30 +14,41 @@
 <div class="container mt-4">
     <div class="row">
         <!-- Form Alanı (Sol Taraf) -->
-        <div class="col-md-4">
-            <h3>Add Class</h3>
-            <form method="post">
-                <div class="mb-3">
-                    <label class="form-label">Class Name</label>
-                    <input type="text" class="form-control" asp-for="NewClass.ClassName">
-                    <span class="text-danger" asp-validation-for="NewClass.ClassName"></span>
-                </div>
+<div class="col-md-4">
+    <h3>Add Class</h3>
 
-                <div class="mb-3">
-                    <label class="form-label">Student Count</label>
-                    <input type="number" class="form-control" asp-for="NewClass.StudentCount">
-                    <span class="text-danger" asp-validation-for="NewClass.StudentCount"></span>
-                </div>
+    <form method="post" asp-page-handler="Add">
+        <!-- VALIDATION MESAJLARI BURADA GÖRÜNÜR -->
+        <div asp-validation-summary="All" class="text-danger"></div>
 
-                <div class="mb-3">
-                    <label class="form-label">Description</label>
-                    <textarea class="form-control" asp-for="NewClass.Description"></textarea>
-                    <span class="text-danger" asp-validation-for="NewClass.Description"></span>
-                </div>
-
-                <button type="submit" class="btn btn-primary" asp-page-handler="Add">Add Class</button>
-            </form>
+        <div class="mb-3">
+            <label class="form-label">Class Name</label>
+            <input type="text" class="form-control" asp-for="NewClass.Name" />
+            <span class="text-danger" asp-validation-for="NewClass.Name"></span>
         </div>
+
+        <div class="mb-3">
+            <label class="form-label">Student Count</label>
+            <input type="number" class="form-control" asp-for="NewClass.PersonCount" />
+            <span class="text-danger" asp-validation-for="NewClass.PersonCount"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Description</label>
+            <textarea class="form-control" asp-for="NewClass.Description"></textarea>
+            <span class="text-danger" asp-validation-for="NewClass.Description"></span>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input class="form-check-input" type="checkbox" asp-for="NewClass.IsActive" />
+            <label class="form-check-label">Is Active</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Class</button>
+    </form>
+</div>
+
+
 
         <!-- Tablo ve Filtreleme (Sağ Taraf) -->
         <div class="col-md-8">
@@ -135,3 +146,7 @@
         </div>
     </div>
 </div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
